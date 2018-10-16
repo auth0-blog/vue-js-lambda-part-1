@@ -26,7 +26,7 @@
           {{ `${microPost.createdAt.getDate()}/${microPost.createdAt.getMonth() + 1}/${microPost.createdAt.getFullYear()}` }}
         </div>
         <p class="text">{{ microPost.text }}</p>
-        <p class="author">- Unknown</p>
+        <p class="author">- {{ microPost.author ? microPost.author.name : 'Unknown' }}</p>
       </div>
     </div>
   </div>
